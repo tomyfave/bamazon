@@ -63,28 +63,12 @@ var connection = mysql.createConnection({
   function checkStock() {
     connection.query("SELECT * FROM products WHERE item_id = " + id, function (err, res) {
       console.log(res);
-      // if (err) throw err;
-      // if (quantity < result.stock_quantity) {
-      //   console.log("Insufficient Quantity");
-  
-      // } else {
-      //   itemCost = result.price;
-      //   stock = result.stock_quantity;
-      //   console.log(itemCost, stock);
-      // }
+
     });
   }
   
   
   
-  // const response = prompts({
-  //   type: 'number',
-  //   name: 'item_id',
-  //   message: 'Enter the id of the product you want'
-  
-// });
- 
- //console.log(response);
 
 
 
@@ -93,13 +77,4 @@ var connection = mysql.createConnection({
 
 
 
-// con.connect(function(err) {
 
-//   if (err) throw err;
-//   console.log("Connected!");
-//   var sql = "INSERT INTO customers (name, address) VALUES ('Company Inc', 'Highway 37')";
-//   con.query(sql, function (err, result) {
-//     if (err) throw err;
-//     console.log("1 record inserted");
-//   });
-// });
