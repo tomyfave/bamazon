@@ -21,8 +21,7 @@ var connection = mysql.createConnection({
 
 
 
-// function displayProducts() {
-//   console.log("Showing all product...\n");
+
   connection.query("SELECT * FROM products", function (err, rows) {
     if (err) {
       console.log(err)
@@ -40,14 +39,14 @@ var connection = mysql.createConnection({
         type: 'input',
         name: 'id',
         message: 'Please enter the Item ID which you would like to purchase.',
-        //validate: validateInput,
+
         filter: Number
       },
       {
         type: 'input',
         name: 'quantity',
         message: 'How many do you need?',
-        //validate: validateInput,
+
         filter: Number
       }
     
@@ -55,8 +54,6 @@ var connection = mysql.createConnection({
       id = answers.id;
       quantity = answers.quantity;
       checkStock();
-      //console.log('Customer has selected: \n    item_id = '  + input.item_id + '\n    quantity = ' + input.quantity);
-      //console.log(id,quantity);
       
     })
   });
@@ -72,11 +69,7 @@ var connection = mysql.createConnection({
     } else if (quantity < res[0].stock_quantity) {
         console.log("Insufficient Quantity");
       
-      // if (quantity < res[0].stock_quantity) {
-      //   console.log("Insufficient Quantity");
-      
-      // } else {
-      // console.log('price:' + res[0].price,'stock:' +  res[0].stock_quantity );
+
       }
     });
   }
