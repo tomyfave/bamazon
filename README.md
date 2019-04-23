@@ -11,8 +11,8 @@ npm install inquirer
 
 
 ## [intialize the app] 
-<img src="./amazon/images/Screen Shot 2019-04-23 at 2.56.14 PM.png" width="1000" height="800" alt="screenshot1">
+<img src="./amazon/images/Screen Shot 2019-04-23 at 2.56.14 PM.png"  alt="screenshot1">
 ## [input your selected id and quantity]
-<img src="./amazon/images/Screen Shot 2019-04-23 at 2.56.33 PM.png" width="1000" height="800" alt="screenshot2">
+<img src="./amazon/images/Screen Shot 2019-04-23 at 2.56.33 PM.png"  alt="screenshot2">
 ### [place order] 
-<img src="./amazon/images/Screen Shot 2019-04-23 at 2.56.49 PM.png" width="1000" height="800" alt="screenshot3">
+<img src="./amazon/images/Screen Shot 2019-04-23 at 2.56.49 PM.png"  alt="screenshot3">
